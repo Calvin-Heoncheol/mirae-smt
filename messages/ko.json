@@ -1,0 +1,289 @@
+{
+  "nav": {
+    "home": "홈",
+    "about": "회사 소개",
+    "capabilities": "제조 역량",
+    "facilities": "설비/시설",
+    "quality": "품질 관리",
+    "contact": "문의하기",
+    "getQuote": "견적 문의"
+  },
+  "common": {
+    "learnMore": "자세히 보기",
+    "contactUs": "문의하기",
+    "viewAll": "전체 보기",
+    "language": "언어"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "OEM · ODM Manufacturing",
+      "title": "원자재부터 완제품까지,\n하나의 파트너로 충분합니다",
+      "subtitle": "SMT, PCB 조립, 완제품 조립, 정밀 검사, 포장까지 — 미래SMT는 전 공정 통합 제조 서비스를 제공합니다.",
+      "ctaPrimary": "견적 문의하기",
+      "ctaSecondary": "제조 역량 보기"
+    },
+    "stats": {
+      "title": "숫자로 보는 미래SMT",
+      "founded": "설립",
+      "employees": "임직원",
+      "factory": "공장 면적",
+      "capa": "월 생산능력"
+    },
+    "strengths": {
+      "title": "왜 미래SMT인가",
+      "subtitle": "20년의 노하우와 통합 공정 라인이 만드는 차이",
+      "items": [
+        {
+          "title": "원스톱 통합 공정",
+          "description": "SMT부터 포장까지 모든 공정을 자사 라인에서 처리하여 리드타임을 단축하고 품질 일관성을 보장합니다."
+        },
+        {
+          "title": "OEM · ODM 동시 지원",
+          "description": "단순 위탁생산은 물론, 설계·시제품·양산까지 책임지는 ODM 서비스를 제공합니다."
+        },
+        {
+          "title": "글로벌 품질 기준",
+          "description": "ISO 9001, ISO 14001 인증과 자체 품질 관리 시스템으로 글로벌 고객사의 신뢰를 확보합니다."
+        },
+        {
+          "title": "유연한 생산 대응",
+          "description": "소량 다품종부터 대량 양산까지, 고객의 비즈니스 단계에 맞춘 유연한 생산이 가능합니다."
+        }
+      ]
+    },
+    "processPreview": {
+      "title": "전 공정 통합 제조",
+      "subtitle": "5개의 핵심 공정이 하나의 라인에서 유기적으로 연결됩니다",
+      "ctaText": "전체 제조 역량 살펴보기"
+    },
+    "clients": {
+      "eyebrow": "Trusted Partners",
+      "title": "미래SMT와 함께한 기업",
+      "subtitle": "글로벌 브랜드와 국내 선도 기업들의 신뢰받는 제조 파트너입니다",
+      "items": [
+        { "name": "HYUNDAI ROTEM" },
+        { "name": "TXR ROBOTICS" },
+        { "name": "E-SEEK" },
+        { "name": "RAONARK" },
+        { "name": "LEETEK" },
+        { "name": "서창전기통신" },
+        { "name": "씨에스아이엔테크" },
+        { "name": "SYS TRONICS" },
+        { "name": "FASTECH" },
+        { "name": "SOTRON" },
+        { "name": "COSTIMO" }
+      ]
+    },
+    "video": {
+      "eyebrow": "Company Video",
+      "title": "영상으로 만나는 미래SMT",
+      "subtitle": "현장의 자동화 라인과 검사 프로세스를 영상으로 직접 확인하세요",
+      "playLabel": "영상 재생",
+      "duration": "Watch Now"
+    },
+    "industries": {
+      "eyebrow": "Industries We Serve",
+      "title": "공급 산업 영역",
+      "subtitle": "다양한 산업의 핵심 부품과 모듈을 책임집니다",
+      "items": [
+        { "key": "display", "name": "디스플레이 / LCD", "description": "디스플레이 모듈, LCD 컨트롤 보드" },
+        { "key": "led", "name": "LED 조명 / 제어", "description": "LED 드라이버, 조명 제어 모듈" },
+        { "key": "automotive", "name": "자동차 전장", "description": "자동차용 ECU 및 전장 모듈" },
+        { "key": "industrial", "name": "산업 자동화", "description": "공장 자동화, FA 컨트롤러" },
+        { "key": "appliance", "name": "가전 / 백색가전", "description": "가전제품 메인 보드 및 컨트롤러" },
+        { "key": "iot", "name": "IoT / 스마트 디바이스", "description": "스마트 홈, 커넥티드 디바이스" },
+        { "key": "medical", "name": "의료기기", "description": "의료용 정밀 전자 부품" },
+        { "key": "consumer", "name": "소비자 전자제품", "description": "일반 소비자용 전자제품 모듈" },
+        { "key": "telecom", "name": "통신 장비", "description": "통신 모듈 및 네트워크 장비" }
+      ]
+    },
+    "cta": {
+      "title": "프로젝트를 검토해 드립니다",
+      "subtitle": "도면, 사양, 수량을 알려주시면 영업일 기준 2일 이내에 답변드립니다.",
+      "button": "무료 견적 받기"
+    }
+  },
+  "about": {
+    "hero": {
+      "eyebrow": "About Mirae SMT",
+      "title": "기술과 신뢰로 30년,\n앞으로의 30년을 준비합니다",
+      "subtitle": "1993년 창립 이래, 우리는 고객의 아이디어를 완성품으로 구현해 온 OEM/ODM 전문 제조 파트너입니다."
+    },
+    "ceo": {
+      "title": "CEO 인사말",
+      "name": "하 영 수",
+      "position": "대표이사",
+      "message": "안녕하십니까. 미래SMT를 찾아주신 모든 분께 감사드립니다.\n\n저희는 \"고객의 성공이 곧 우리의 성공\"이라는 신념으로, 단순 위탁 생산을 넘어 고객과 함께 성장하는 진정한 제조 파트너가 되고자 합니다. 끊임없는 기술 투자와 품질 혁신으로 글로벌 무대에서 인정받는 기업으로 성장해 나가겠습니다."
+    },
+    "vision": {
+      "title": "미션과 비전",
+      "mission": {
+        "label": "Mission",
+        "text": "최고의 품질과 정확한 납기로, 고객의 비즈니스 성공을 지원하는 신뢰받는 제조 파트너가 된다."
+      },
+      "vision": {
+        "label": "Vision",
+        "text": "아시아를 대표하는 OEM/ODM 통합 제조 솔루션 기업"
+      },
+      "values": {
+        "label": "Core Values",
+        "items": ["품질 우선", "고객 중심", "지속적 혁신", "사람과 환경"]
+      }
+    },
+    "history": {
+      "title": "연혁",
+      "items": [
+        { "year": "1993", "text": "미래통상 설립 · Air Reflow Soldering 국내 독점 공급원 계약" },
+        { "year": "1994", "text": "구로공장 설립 · EMS 사업 본격 개시" },
+        { "year": "2000", "text": "「미래SMT」로 사명 변경 · 경기도 부천테크노파크 이전" },
+        { "year": "2004", "text": "(주)아이레보향 SMD / PBA 전용 생산 라인 5개 구축" },
+        { "year": "2008", "text": "중국 심양 법인 설립 · 수영전자 SMT 3개 라인 구축" },
+        { "year": "2014", "text": "대웅전자향 SMT 2개 라인 구축 (삼성 LCD)" },
+        { "year": "2016", "text": "부천 102동 4층 전층(全層) 확장" },
+        { "year": "2023", "text": "SMT 라인 8개로 증설 · SMT 라인 교체 (JUKI → 한화)" },
+        { "year": "2025", "text": "스마트 팩토리 구축 — MES 시스템 도입" }
+      ]
+    }
+  },
+  "capabilities": {
+    "hero": {
+      "eyebrow": "Capabilities",
+      "title": "전 공정을 한 곳에서",
+      "subtitle": "5개의 핵심 공정이 하나의 자동화 라인으로 연결되어, 빠르고 일관된 품질을 보장합니다."
+    },
+    "items": {
+      "smt": {
+        "name": "SMT",
+        "headline": "표면 실장 공정",
+        "description": "한화·JUKI 칩 마운터와 인라인 검사 장비로 0201부터 BGA까지 정밀하게 실장합니다.",
+        "specs": ["SMT 라인 7개 운영", "한화 / JUKI 칩 마운터", "0201 ~ BGA / QFN 대응", "Heller Reflow Oven · SPI / AOI 인라인"]
+      },
+      "pcb": {
+        "name": "PCB 조립",
+        "headline": "PCB 어셈블리 / DIP",
+        "description": "Wave Soldering과 삽입형 부품 라인을 모두 갖춰 고난도 보드 어셈블리도 대응합니다.",
+        "specs": ["Wave Soldering & Insert 라인 5개", "자동 / 수동 삽입 혼합 운영", "Selective Soldering 대응", "PCB 세척기 · 드라이아이스 세척"]
+      },
+      "assembly": {
+        "name": "제품 조립",
+        "headline": "완제품 조립 (Assembly)",
+        "description": "기구물 조립, 케이블 작업, 외관 점검까지 완제품 단계의 모든 공정을 처리합니다.",
+        "specs": ["조립 라인 5개 운영", "Touch Up 라인 3개", "토크 관리 시스템 · 포카요케 적용", "완제품 외관 검사"]
+      },
+      "qc": {
+        "name": "검사 / 테스트",
+        "headline": "Quality Control & Test",
+        "description": "전수 검사부터 신뢰성 시험까지, 다단계 검증으로 불량 유출을 차단합니다.",
+        "specs": ["Mirtec AOI 광학 검사", "SPI 솔더 페이스트 검사", "X-Ray BGA · QFN 검사", "신뢰성 환경 시험"]
+      },
+      "packaging": {
+        "name": "포장 / 출하",
+        "headline": "Packaging & Logistics",
+        "description": "ESD 포장부터 수출 컨테이너 적재까지 — 최종 출하 단계를 책임집니다.",
+        "specs": ["포장 라인 2개 운영", "ESD 안전 포장", "고객 OEM 패키지 대응", "수출 라벨링 · VMI / JIT 출하"]
+      }
+    },
+    "process": {
+      "title": "제조 흐름",
+      "subtitle": "고객의 도면이 완제품으로 출하되기까지"
+    }
+  },
+  "facilities": {
+    "hero": {
+      "eyebrow": "Facilities",
+      "title": "현대화된 스마트 팩토리",
+      "subtitle": "최신 자동화 설비와 MES 시스템으로 실시간 생산을 관리합니다."
+    },
+    "stats": {
+      "title": "생산 라인 구성",
+      "totalNote": "총 22개 생산 라인 운영",
+      "items": [
+        { "label": "SMT 라인", "value": "7" },
+        { "label": "Wave Soldering & Insert", "value": "5" },
+        { "label": "조립 라인", "value": "5" },
+        { "label": "Touch Up 라인", "value": "3" },
+        { "label": "포장 라인", "value": "2" }
+      ]
+    },
+    "equipment": {
+      "title": "주요 설비",
+      "subtitle": "정밀 자동화 장비로 일관된 품질을 구현합니다",
+      "items": [
+        { "id": "hanwha", "category": "SMT", "name": "한화(Hanwha) 칩 마운터", "spec": "고속 칩 실장 · 다품종 대응" },
+        { "id": "juki", "category": "SMT", "name": "JUKI 칩 마운터", "spec": "정밀 부품 실장 · 0201 ~ BGA 대응" },
+        { "id": "heller", "category": "솔더링", "name": "Heller Reflow Oven", "spec": "다존 리플로우 · 정밀 온도 프로파일" },
+        { "id": "solder-mgmt", "category": "보관", "name": "솔더 페이스트 보관기", "spec": "정밀 온도 제어 · 솔더 페이스트 품질 보존" },
+        { "id": "spi", "category": "검사", "name": "SPI Machine", "spec": "3D 솔더 페이스트 검사 · 인쇄 품질 사전 검출" },
+        { "id": "aoi", "category": "검사", "name": "Mirtec AOI Machine", "spec": "자동 광학 검사 · 부품 실장 결함 검출" },
+        { "id": "xray", "category": "검사", "name": "X-Ray Inspection", "spec": "BGA · QFN 내부 솔더 검사" },
+        { "id": "pcb-washer", "category": "세척", "name": "PCB 세척기", "spec": "Flux 잔류물 / 오염 제거" },
+        { "id": "dry-ice", "category": "세척", "name": "드라이아이스 세척기", "spec": "비접촉식 친환경 정밀 세척" }
+      ]
+    }
+  },
+  "quality": {
+    "hero": {
+      "eyebrow": "Quality",
+      "title": "타협하지 않는 품질",
+      "subtitle": "원자재 수입검사부터 출하 검사까지, 7단계 품질 게이트를 운영합니다."
+    },
+    "certifications": {
+      "title": "인증 현황"
+    },
+    "process": {
+      "title": "품질 관리 프로세스",
+      "steps": [
+        { "step": "01", "title": "IQC", "text": "원자재 수입 검사 — 부품 외관, 사양, 신뢰성 샘플링" },
+        { "step": "02", "title": "IPQC", "text": "공정 중 검사 — 각 공정 직후 SPC 기반 품질 모니터링" },
+        { "step": "03", "title": "OQC", "text": "출하 전 최종 검사 — 외관, 기능, 패키지 무결성" },
+        { "step": "04", "title": "OBA", "text": "출하 후 신뢰성 검증 (Out of Box Audit)" }
+      ]
+    },
+    "policy": {
+      "title": "품질 방침",
+      "text": "우리는 고객이 요구하는 품질을 \"적합\"이 아닌 \"기대 이상\"으로 충족하기 위해 모든 임직원이 헌신합니다. 부적합은 숨기지 않고 드러내며, 재발 방지를 위한 시스템적 개선을 우선합니다."
+    }
+  },
+  "contact": {
+    "hero": {
+      "eyebrow": "Contact",
+      "title": "프로젝트를 알려주세요",
+      "subtitle": "도면, 사양, 예상 수량을 보내주시면 영업일 기준 2일 이내에 견적과 제안서를 회신드립니다."
+    },
+    "info": {
+      "addressLabel": "주소",
+      "phoneLabel": "전화",
+      "emailLabel": "이메일",
+      "hoursLabel": "운영 시간"
+    },
+    "form": {
+      "title": "온라인 문의",
+      "subtitle": "필수 항목을 입력해 주세요",
+      "name": "이름",
+      "company": "회사명",
+      "email": "이메일",
+      "phone": "연락처",
+      "subject": "제목",
+      "message": "문의 내용",
+      "messagePlaceholder": "제품 종류, 예상 수량, 도면 보유 여부 등을 알려주세요.",
+      "submit": "보내기",
+      "submitting": "보내는 중...",
+      "successTitle": "문의가 접수되었습니다",
+      "successMessage": "확인 후 영업일 기준 2일 이내에 회신드리겠습니다.",
+      "errorTitle": "전송에 실패했습니다",
+      "errorMessage": "잠시 후 다시 시도하거나, 이메일로 직접 문의해 주세요."
+    }
+  },
+  "footer": {
+    "tagline": "OEM/ODM 통합 제조 파트너",
+    "navTitle": "사이트맵",
+    "contactTitle": "연락처",
+    "certTitle": "인증",
+    "copyright": "© {year} {name}. All rights reserved."
+  },
+  "notFound": {
+    "title": "페이지를 찾을 수 없습니다",
+    "subtitle": "요청하신 페이지가 이동되었거나 존재하지 않습니다.",
+    "back": "홈으로 돌아가기"
+  }
+}

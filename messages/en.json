@@ -1,0 +1,289 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "capabilities": "Capabilities",
+    "facilities": "Facilities",
+    "quality": "Quality",
+    "contact": "Contact",
+    "getQuote": "Get a Quote"
+  },
+  "common": {
+    "learnMore": "Learn more",
+    "contactUs": "Contact us",
+    "viewAll": "View all",
+    "language": "Language"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "OEM · ODM Manufacturing",
+      "title": "From raw materials to finished products,\nall under one roof",
+      "subtitle": "SMT, PCB assembly, final assembly, precision inspection, and packaging — Mirae SMT delivers an end-to-end manufacturing service.",
+      "ctaPrimary": "Request a Quote",
+      "ctaSecondary": "Explore Capabilities"
+    },
+    "stats": {
+      "title": "Mirae SMT in Numbers",
+      "founded": "Founded",
+      "employees": "Employees",
+      "factory": "Factory Area",
+      "capa": "Monthly Capacity"
+    },
+    "strengths": {
+      "title": "Why Mirae SMT",
+      "subtitle": "Two decades of expertise meets a fully integrated production line",
+      "items": [
+        {
+          "title": "One-Stop Integration",
+          "description": "Every process — from SMT to packaging — runs on our own lines, shortening lead time and ensuring quality consistency."
+        },
+        {
+          "title": "OEM & ODM",
+          "description": "Beyond contract manufacturing, we offer ODM services covering design, prototyping, and mass production."
+        },
+        {
+          "title": "Global Quality Standards",
+          "description": "ISO 9001 and ISO 14001 certified, backed by a proprietary quality management system trusted by global customers."
+        },
+        {
+          "title": "Flexible Production",
+          "description": "From low-volume / high-mix to mass production — we scale with your business at every stage."
+        }
+      ]
+    },
+    "processPreview": {
+      "title": "End-to-End Manufacturing",
+      "subtitle": "Five core processes seamlessly connected on a single integrated line",
+      "ctaText": "See Full Capabilities"
+    },
+    "clients": {
+      "eyebrow": "Trusted Partners",
+      "title": "Brands that work with Mirae SMT",
+      "subtitle": "A trusted manufacturing partner for global brands and Korean industry leaders",
+      "items": [
+        { "name": "HYUNDAI ROTEM" },
+        { "name": "TXR ROBOTICS" },
+        { "name": "E-SEEK" },
+        { "name": "RAONARK" },
+        { "name": "LEETEK" },
+        { "name": "Seochang Electric & Telecom" },
+        { "name": "CSI N-Tech" },
+        { "name": "SYS TRONICS" },
+        { "name": "FASTECH" },
+        { "name": "SOTRON" },
+        { "name": "COSTIMO" }
+      ]
+    },
+    "video": {
+      "eyebrow": "Company Video",
+      "title": "Mirae SMT in motion",
+      "subtitle": "See our automated production lines and inspection processes in action",
+      "playLabel": "Play video",
+      "duration": "Watch Now"
+    },
+    "industries": {
+      "eyebrow": "Industries We Serve",
+      "title": "Industries We Serve",
+      "subtitle": "Delivering core components and modules across a wide range of industries",
+      "items": [
+        { "key": "display", "name": "Display / LCD", "description": "Display modules and LCD control boards" },
+        { "key": "led", "name": "LED Lighting", "description": "LED drivers and lighting control modules" },
+        { "key": "automotive", "name": "Automotive", "description": "Automotive ECUs and electronic modules" },
+        { "key": "industrial", "name": "Industrial Automation", "description": "Factory automation and FA controllers" },
+        { "key": "appliance", "name": "Home Appliances", "description": "Mainboards and controllers for appliances" },
+        { "key": "iot", "name": "IoT / Smart Devices", "description": "Smart home and connected devices" },
+        { "key": "medical", "name": "Medical Devices", "description": "Precision electronics for medical equipment" },
+        { "key": "consumer", "name": "Consumer Electronics", "description": "Modules for consumer electronic products" },
+        { "key": "telecom", "name": "Telecommunications", "description": "Communication modules and networking gear" }
+      ]
+    },
+    "cta": {
+      "title": "Let us review your project",
+      "subtitle": "Send us your drawings, specs, and volumes — we'll reply within 2 business days.",
+      "button": "Get a Free Quote"
+    }
+  },
+  "about": {
+    "hero": {
+      "eyebrow": "About Mirae SMT",
+      "title": "30 years of technology and trust,\nbuilding the next 30",
+      "subtitle": "Since 1993, we have been a dedicated OEM/ODM manufacturing partner turning ideas into finished products."
+    },
+    "ceo": {
+      "title": "Message from the CEO",
+      "name": "Youngsoo Ha",
+      "position": "Chief Executive Officer",
+      "message": "Welcome to Mirae SMT.\n\nWith the belief that \"our customers' success is our success,\" we strive to be a true manufacturing partner — not just a contract supplier — growing alongside our clients. Through continuous investment in technology and quality, we aim to be recognized on the global stage."
+    },
+    "vision": {
+      "title": "Mission & Vision",
+      "mission": {
+        "label": "Mission",
+        "text": "To be a trusted manufacturing partner that supports our customers' success through uncompromising quality and reliable delivery."
+      },
+      "vision": {
+        "label": "Vision",
+        "text": "To become Asia's leading integrated OEM/ODM manufacturing solutions provider."
+      },
+      "values": {
+        "label": "Core Values",
+        "items": ["Quality First", "Customer-Centric", "Continuous Innovation", "People & Environment"]
+      }
+    },
+    "history": {
+      "title": "Milestones",
+      "items": [
+        { "year": "1993", "text": "Founded as Mirae Trading · Exclusive Korean distributor for Air Reflow Soldering" },
+        { "year": "1994", "text": "Guro factory established · EMS business launched" },
+        { "year": "2000", "text": "Renamed \"Mirae SMT\" · Relocated to Bucheon Technopark, Gyeonggi-do" },
+        { "year": "2004", "text": "Built 5 dedicated SMD / PBA lines for iRevo" },
+        { "year": "2008", "text": "Established Shenyang (China) subsidiary · 3 SMT lines for Suyoung Electronics" },
+        { "year": "2014", "text": "Built 2 SMT lines for Daewoong Electronics (Samsung LCD)" },
+        { "year": "2016", "text": "Expanded full 4F of Bucheon Bldg. #102" },
+        { "year": "2023", "text": "Expanded SMT lines to 8 · SMT line upgrade (JUKI → Hanwha)" },
+        { "year": "2025", "text": "Smart factory transformation — MES system deployed" }
+      ]
+    }
+  },
+  "capabilities": {
+    "hero": {
+      "eyebrow": "Capabilities",
+      "title": "Every process, one location",
+      "subtitle": "Five core processes connected on a single automated line — for fast, consistent quality."
+    },
+    "items": {
+      "smt": {
+        "name": "SMT",
+        "headline": "Surface Mount Technology",
+        "description": "Hanwha and JUKI chip mounters with inline inspection handle 0201 to BGA placement with precision.",
+        "specs": ["7 SMT lines in operation", "Hanwha / JUKI chip mounters", "0201 ~ BGA / QFN compatible", "Heller Reflow · SPI / AOI inline"]
+      },
+      "pcb": {
+        "name": "PCB Assembly",
+        "headline": "PCB Assembly / DIP",
+        "description": "Wave soldering combined with through-hole insertion lines — we handle the most complex board assemblies.",
+        "specs": ["5 Wave Soldering & Insert lines", "Auto + manual insertion", "Selective soldering capable", "PCB washer · Dry-ice cleaning"]
+      },
+      "assembly": {
+        "name": "Assembly",
+        "headline": "Final Product Assembly",
+        "description": "Mechanical assembly, cable work, and cosmetic inspection — every step to a finished product.",
+        "specs": ["5 assembly lines", "3 touch-up lines", "Torque management · Poka-yoke", "Final cosmetic inspection"]
+      },
+      "qc": {
+        "name": "QC / Test",
+        "headline": "Quality Control & Test",
+        "description": "From 100% inspection to reliability testing — multi-stage validation prevents defect escape.",
+        "specs": ["Mirtec AOI optical inspection", "SPI solder paste inspection", "X-Ray BGA · QFN inspection", "Environmental reliability tests"]
+      },
+      "packaging": {
+        "name": "Packaging",
+        "headline": "Packaging & Logistics",
+        "description": "ESD-safe packaging to export container loading — we own the final mile.",
+        "specs": ["2 packaging lines", "ESD-safe packaging", "Custom OEM packaging", "Export labeling · VMI / JIT delivery"]
+      }
+    },
+    "process": {
+      "title": "Manufacturing Flow",
+      "subtitle": "From your drawing to a finished shipment"
+    }
+  },
+  "facilities": {
+    "hero": {
+      "eyebrow": "Facilities",
+      "title": "A modern smart factory",
+      "subtitle": "Real-time production monitored through state-of-the-art automation and MES."
+    },
+    "stats": {
+      "title": "Production Line Configuration",
+      "totalNote": "Operating 22 production lines in total",
+      "items": [
+        { "label": "SMT Lines", "value": "7" },
+        { "label": "Wave Soldering & Insert", "value": "5" },
+        { "label": "Assembly Lines", "value": "5" },
+        { "label": "Touch Up Lines", "value": "3" },
+        { "label": "Packaging Lines", "value": "2" }
+      ]
+    },
+    "equipment": {
+      "title": "Key Equipment",
+      "subtitle": "Precision automation delivers consistent quality",
+      "items": [
+        { "id": "hanwha", "category": "SMT", "name": "Hanwha Chip Mounter", "spec": "High-speed placement · High-mix ready" },
+        { "id": "juki", "category": "SMT", "name": "JUKI Chip Mounter", "spec": "Precision placement · 0201 ~ BGA" },
+        { "id": "heller", "category": "Soldering", "name": "Heller Reflow Oven", "spec": "Multi-zone reflow · Precise thermal profile" },
+        { "id": "solder-mgmt", "category": "Storage", "name": "Solder Paste Storage System", "spec": "Precise temperature control · Solder paste quality preservation" },
+        { "id": "spi", "category": "Inspection", "name": "SPI Machine", "spec": "3D solder paste inspection · Pre-placement quality control" },
+        { "id": "aoi", "category": "Inspection", "name": "Mirtec AOI Machine", "spec": "Automated optical inspection for placement defects" },
+        { "id": "xray", "category": "Inspection", "name": "X-Ray Inspection", "spec": "BGA · QFN internal solder joint inspection" },
+        { "id": "pcb-washer", "category": "Cleaning", "name": "PCB Washer", "spec": "Flux residue and contamination removal" },
+        { "id": "dry-ice", "category": "Cleaning", "name": "Dry Ice Cleaner", "spec": "Non-contact, eco-friendly precision cleaning" }
+      ]
+    }
+  },
+  "quality": {
+    "hero": {
+      "eyebrow": "Quality",
+      "title": "Uncompromising quality",
+      "subtitle": "Seven quality gates run from incoming inspection all the way to outgoing audit."
+    },
+    "certifications": {
+      "title": "Certifications"
+    },
+    "process": {
+      "title": "Quality Control Process",
+      "steps": [
+        { "step": "01", "title": "IQC", "text": "Incoming inspection — appearance, specs, reliability sampling" },
+        { "step": "02", "title": "IPQC", "text": "In-process inspection — SPC-based monitoring after each step" },
+        { "step": "03", "title": "OQC", "text": "Outgoing inspection — appearance, function, package integrity" },
+        { "step": "04", "title": "OBA", "text": "Out-of-Box Audit after shipment" }
+      ]
+    },
+    "policy": {
+      "title": "Quality Policy",
+      "text": "We commit to exceeding — not merely meeting — our customers' expectations. Nonconformities are surfaced, not hidden, and addressed through systemic improvement to prevent recurrence."
+    }
+  },
+  "contact": {
+    "hero": {
+      "eyebrow": "Contact",
+      "title": "Tell us about your project",
+      "subtitle": "Send your drawings, specs, and expected volume — we'll reply with a quote within 2 business days."
+    },
+    "info": {
+      "addressLabel": "Address",
+      "phoneLabel": "Phone",
+      "emailLabel": "Email",
+      "hoursLabel": "Business Hours"
+    },
+    "form": {
+      "title": "Online Inquiry",
+      "subtitle": "Please fill in the required fields",
+      "name": "Name",
+      "company": "Company",
+      "email": "Email",
+      "phone": "Phone",
+      "subject": "Subject",
+      "message": "Message",
+      "messagePlaceholder": "Product type, expected volume, drawing availability, etc.",
+      "submit": "Send",
+      "submitting": "Sending...",
+      "successTitle": "Inquiry received",
+      "successMessage": "We'll get back to you within 2 business days.",
+      "errorTitle": "Failed to send",
+      "errorMessage": "Please try again later or email us directly."
+    }
+  },
+  "footer": {
+    "tagline": "Integrated OEM/ODM manufacturing partner",
+    "navTitle": "Sitemap",
+    "contactTitle": "Contact",
+    "certTitle": "Certifications",
+    "copyright": "© {year} {name}. All rights reserved."
+  },
+  "notFound": {
+    "title": "Page not found",
+    "subtitle": "The page you requested may have moved or no longer exists.",
+    "back": "Back to Home"
+  }
+}
