@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import { Send, CheckCircle2, AlertCircle } from 'lucide-react';
 import clsx from 'clsx';
 
@@ -9,6 +9,7 @@ type Status = 'idle' | 'submitting' | 'success' | 'error';
 
 export default function ContactForm() {
   const t = useTranslations('contact.form');
+  const locale = useLocale();
   const [status, setStatus] = useState<Status>('idle');
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
@@ -21,7 +22,7 @@ export default function ContactForm() {
       const res = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data),
+        body: JSON.stringify({ ...data, locale }),
       });
       if (!res.ok) throw new Error('Request failed');
       setStatus('success');

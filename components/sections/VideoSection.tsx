@@ -7,9 +7,18 @@ import { Play, X } from 'lucide-react';
 import SectionHeader from './SectionHeader';
 import { siteConfig } from '@/config/site';
 
+// YouTube 썸네일은 해상도별로 존재 여부가 다릅니다.
+// maxresdefault는 모든 영상에 있는 게 아니라서 단계적으로 폴백합니다.
+const thumbnailQualities = [
+  'maxresdefault', // 1280x720 (16:9) - 가끔 없음
+  'sddefault',     // 640x480
+  'hqdefault',     // 480x360 - 항상 있음
+] as const;
+
 export default function VideoSection() {
   const t = useTranslations('home.video');
   const [open, setOpen] = useState(false);
+  const [thumbIndex, setThumbIndex] = useState(0);
   const { youtubeId, customThumbnail } = siteConfig.video;
 
   useEffect(() => {
@@ -28,10 +37,16 @@ export default function VideoSection() {
   const thumbnail =
     customThumbnail ||
     (youtubeId
-      ? `https://img.youtube.com/vi/${youtubeId}/maxresdefault.jpg`
+      ? `https://i.ytimg.com/vi/${youtubeId}/${thumbnailQualities[thumbIndex]}.jpg`
       : '');
 
   const hasVideo = Boolean(youtubeId);
+
+  const handleThumbError = () => {
+    if (thumbIndex < thumbnailQualities.length - 1) {
+      setThumbIndex(thumbIndex + 1);
+    }
+  };
 
   return (
     <section className="section">
@@ -52,12 +67,15 @@ export default function VideoSection() {
           >
             {thumbnail ? (
               <Image
+                key={thumbnail}
                 src={thumbnail}
                 alt=""
                 fill
                 sizes="(max-width: 1024px) 100vw, 1024px"
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
                 priority={false}
+                unoptimized
+                onError={handleThumbError}
               />
             ) : (
               <div className="absolute inset-0 bg-gradient-to-br from-brand-800 via-brand-900 to-ink-950">

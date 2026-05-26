@@ -54,7 +54,7 @@ export const siteConfig = {
   // 예: https://www.youtube.com/watch?v=dQw4w9WgXcQ → youtubeId: 'dQw4w9WgXcQ'
   video: {
     youtubeId: 'fWewMfFqnWI',
-    customThumbnail: '', // 선택: 자체 썸네일 경로 (없으면 YouTube 자동 썸네일 사용)
+    customThumbnail: '/images/Thumbnail.png',
   },
 } as const;
 
