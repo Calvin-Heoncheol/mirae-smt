@@ -11,6 +11,7 @@ import {
 } from 'lucide-react';
 import PageHero from '@/components/sections/PageHero';
 import SectionHeader from '@/components/sections/SectionHeader';
+import { siteConfig } from '@/config/site';
 
 const processKeys = ['smt', 'pcb', 'assembly', 'qc', 'packaging'] as const;
 type ProcessKey = (typeof processKeys)[number];
@@ -32,6 +33,7 @@ export default function CapabilitiesPage() {
         eyebrow={t('hero.eyebrow')}
         title={t('hero.title')}
         subtitle={t('hero.subtitle')}
+        backgroundImage={siteConfig.backgrounds.capabilities}
       />
 
       <section className="section">

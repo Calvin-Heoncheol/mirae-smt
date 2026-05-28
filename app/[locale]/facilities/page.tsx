@@ -3,6 +3,7 @@ import { useTranslations } from 'next-intl';
 import { ImageOff } from 'lucide-react';
 import PageHero from '@/components/sections/PageHero';
 import SectionHeader from '@/components/sections/SectionHeader';
+import { siteConfig } from '@/config/site';
 
 const equipmentImages: Record<string, string | undefined> = {
   hanwha: '/images/equipment/Hanwha_Decan.png',
@@ -33,6 +34,7 @@ export default function FacilitiesPage() {
         eyebrow={t('hero.eyebrow')}
         title={t('hero.title')}
         subtitle={t('hero.subtitle')}
+        backgroundImage={siteConfig.backgrounds.facilities}
       />
 
       <section className="section">

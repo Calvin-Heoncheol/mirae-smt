@@ -56,6 +56,15 @@ export const siteConfig = {
     youtubeId: 'fWewMfFqnWI',
     customThumbnail: '/images/Thumbnail.png',
   },
+
+  // 페이지 히어로 배경 이미지 (public/images/background/)
+  backgrounds: {
+    home: '/images/background/Home.png',
+    about: '/images/background/Company_Introduce.png',
+    capabilities: '/images/background/Facilities.png',
+    facilities: '/images/background/Facilities.png',
+    quality: '/images/background/quality.png',
+  },
 } as const;
 
 export type SiteConfig = typeof siteConfig;

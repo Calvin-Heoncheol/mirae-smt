@@ -2,6 +2,7 @@ import { useTranslations } from 'next-intl';
 import { Target, Eye, Sparkles, CheckCircle2 } from 'lucide-react';
 import PageHero from '@/components/sections/PageHero';
 import SectionHeader from '@/components/sections/SectionHeader';
+import { siteConfig } from '@/config/site';
 
 export default function AboutPage() {
   const t = useTranslations('about');
@@ -16,6 +17,7 @@ export default function AboutPage() {
         eyebrow={t('hero.eyebrow')}
         title={t('hero.title')}
         subtitle={t('hero.subtitle')}
+        backgroundImage={siteConfig.backgrounds.about}
       />
 
       <section className="section">
@@ -111,15 +113,17 @@ export default function AboutPage() {
                           : 'bg-brand-700 ring-brand-100'
                       }`}
                     />
-                    <div className="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-4">
-                      <span className="text-xl font-bold text-brand-700 w-20 flex-shrink-0 flex items-center gap-2">
-                        {item.year}
+                    <div className="flex flex-col gap-2">
+                      <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
+                        <span className="text-xl font-bold text-brand-700 tabular-nums">
+                          {item.year}
+                        </span>
                         {isLatest && (
-                          <span className="hidden sm:inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-brand-100 text-brand-800">
-                            Latest
+                          <span className="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-brand-100 text-brand-800">
+                            {t('history.latestBadge')}
                           </span>
                         )}
-                      </span>
+                      </div>
                       <p
                         className={`leading-relaxed ${
                           isLatest

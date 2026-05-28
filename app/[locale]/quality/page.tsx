@@ -1,6 +1,6 @@
 import { useTranslations } from 'next-intl';
 import { Award, ShieldCheck } from 'lucide-react';
-import PageHero from '@/components/sections/PageHero';
+import QualityHero from '@/components/sections/QualityHero';
 import SectionHeader from '@/components/sections/SectionHeader';
 import { siteConfig } from '@/config/site';
 
@@ -15,11 +15,7 @@ export default function QualityPage() {
 
   return (
     <>
-      <PageHero
-        eyebrow={t('hero.eyebrow')}
-        title={t('hero.title')}
-        subtitle={t('hero.subtitle')}
-      />
+      <QualityHero />
 
       <section className="section">
         <div className="container">
@@ -91,7 +87,6 @@ export default function QualityPage() {
           </div>
         </div>
       </section>
-
     </>
   );
 }

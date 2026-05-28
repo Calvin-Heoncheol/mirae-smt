@@ -2,7 +2,7 @@
   "nav": {
     "home": "Home",
     "about": "About",
-    "capabilities": "Capabilities",
+    "capabilities": "Processes",
     "facilities": "Facilities",
     "quality": "Quality",
     "contact": "Contact",
@@ -17,10 +17,10 @@
   "home": {
     "hero": {
       "eyebrow": "OEM · ODM Manufacturing",
-      "title": "From raw materials to finished products,\nall under one roof",
-      "subtitle": "SMT, PCB assembly, final assembly, precision inspection, and packaging — Mirae SMT delivers an end-to-end manufacturing service.",
+      "title": "From SMT to shipment,\ncompleted in one place",
+      "subtitle": "SMT, PCB assembly, final assembly, precision inspection, and packaging — Mirae SMT delivers an end-to-end manufacturing service. From low-volume prototypes to high-volume mass production.",
       "ctaPrimary": "Request a Quote",
-      "ctaSecondary": "Explore Capabilities"
+      "ctaSecondary": "View Processes"
     },
     "stats": {
       "title": "Mirae SMT in Numbers",
@@ -54,7 +54,7 @@
     "processPreview": {
       "title": "End-to-End Manufacturing",
       "subtitle": "Five core processes seamlessly connected on a single integrated line",
-      "ctaText": "See Full Capabilities"
+      "ctaText": "View All Processes"
     },
     "clients": {
       "eyebrow": "Trusted Partners",
@@ -132,6 +132,7 @@
     },
     "history": {
       "title": "Milestones",
+      "latestBadge": "Latest",
       "items": [
         { "year": "1993", "text": "Founded as Mirae Trading · Exclusive Korean distributor for Air Reflow Soldering" },
         { "year": "1994", "text": "Guro factory established · EMS business launched" },
@@ -147,7 +148,7 @@
   },
   "capabilities": {
     "hero": {
-      "eyebrow": "Capabilities",
+      "eyebrow": "Processes",
       "title": "Every process, one location",
       "subtitle": "Five core processes connected on a single automated line — for fast, consistent quality."
     },
@@ -223,9 +224,13 @@
   },
   "quality": {
     "hero": {
-      "eyebrow": "Quality",
-      "title": "Uncompromising quality",
-      "subtitle": "Seven quality gates run from incoming inspection all the way to outgoing audit."
+      "title": "Quality is our standard; trust is our promise to customers",
+      "subtitle": "We deliver the best products and services through rigorous quality management and continuous improvement.",
+      "pillars": [
+        { "title": "Systematic quality management" },
+        { "title": "Thorough inspection & control" },
+        { "title": "Continuous quality improvement" }
+      ]
     },
     "certifications": {
       "title": "Certifications"
@@ -247,8 +252,8 @@
   "contact": {
     "hero": {
       "eyebrow": "Contact",
-      "title": "Tell us about your project",
-      "subtitle": "Send your drawings, specs, and expected volume — we'll reply with a quote within 2 business days."
+      "title": "Quote & Manufacturing Inquiry",
+      "subtitle": "Share your drawings, specifications, and estimated quantities — we'll review and respond within 2 business days."
     },
     "info": {
       "addressLabel": "Address",
