@@ -1,7 +1,7 @@
 import { MapPin, ExternalLink, Navigation } from 'lucide-react';
+import Image from 'next/image';
 import type { Locale } from '@/i18n';
 import { siteConfig } from '@/config/site';
-import NaverMap from '@/components/NaverMap';
 
 export default function MapCard({ locale }: { locale: Locale }) {
   const address = siteConfig.contact.address[locale];
@@ -14,12 +14,17 @@ export default function MapCard({ locale }: { locale: Locale }) {
   return (
     <div className="rounded-2xl border border-ink-100 bg-white overflow-hidden shadow-sm">
       <div className="relative h-56 md:h-64 overflow-hidden bg-ink-100">
-        <NaverMap
-          fallbackLabel={
-            locale === 'ko'
-              ? '지도를 불러올 수 없습니다. 아래 버튼으로 확인해 주세요.'
-              : 'Unable to load the map. Please use the links below.'
-          }
+        <Image
+          src="/images/background/map.png"
+          alt=""
+          fill
+          sizes="(max-width: 768px) 100vw, 50vw"
+          className="object-cover"
+          priority
+        />
+        <div
+          aria-hidden
+          className="absolute inset-0 bg-gradient-to-t from-ink-950/70 via-ink-950/20 to-transparent"
         />
       </div>
 
