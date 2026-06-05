@@ -61,17 +61,15 @@
       "title": "미래SMT와 함께한 기업",
       "subtitle": "글로벌 브랜드와 국내 선도 기업들의 신뢰받는 제조 파트너입니다",
       "items": [
-        { "name": "HYUNDAI ROTEM" },
-        { "name": "TXR ROBOTICS" },
-        { "name": "E-SEEK" },
-        { "name": "RAONARK" },
-        { "name": "LEETEK" },
-        { "name": "서창전기통신" },
-        { "name": "씨에스아이엔테크" },
-        { "name": "SYS TRONICS" },
-        { "name": "FASTECH" },
-        { "name": "SOTRON" },
-        { "name": "COSTIMO" }
+        { "id": "hyundai_rotem", "name": "HYUNDAI ROTEM" },
+        { "id": "txr_robotics", "name": "TXR ROBOTICS" },
+        { "id": "e_seek", "name": "E-SEEK" },
+        { "id": "raonark", "name": "RAONARK" },
+        { "id": "leetek", "name": "LEETEK" },
+        { "id": "seochang", "name": "서창전기통신" },
+        { "id": "csi_ntech", "name": "씨에스아이엔테크" },
+        { "id": "fastech", "name": "FASTECH" },
+        { "id": "costimo", "name": "COSTIMO" }
       ]
     },
     "video": {

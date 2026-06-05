@@ -39,9 +39,10 @@ export const siteConfig = {
   company: {
     founded: 1993,
     employees: '120+',
-    factoryArea: '5,800m²',
+    factoryArea: '4,200m²',
     monthlyCapa: '8M+ pcs',
     certifications: ['ISO 9001:2015', 'ISO 14001:2015', 'IATF 16949 (Pending)'],
+    ceoPhoto: '/images/logo/CEO.png',
   },
 
   social: {
@@ -55,6 +56,19 @@ export const siteConfig = {
   video: {
     youtubeId: 'fWewMfFqnWI',
     customThumbnail: '/images/Thumbnail.png',
+  },
+
+  // 협력 기업 로고 (public/images/logo/)
+  clientLogos: {
+    hyundai_rotem: '/images/logo/HYUNDAI_ROTEM.svg',
+    txr_robotics: '/images/logo/TXR_ROBOTICS.jpg',
+    e_seek: '/images/logo/E-SEEK.jpeg',
+    raonark: '/images/logo/RAONARK.png',
+    leetek: '/images/logo/LEETEK.png',
+    seochang: '/images/logo/SEOCHANG.jpg',
+    csi_ntech: '/images/logo/CSIN.png',
+    fastech: '/images/logo/FASTECH.png',
+    costimo: '/images/logo/COSTIMO.png',
   },
 
   // 페이지 히어로 배경 이미지 (public/images/background/)

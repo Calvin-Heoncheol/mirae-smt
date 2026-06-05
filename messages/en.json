@@ -61,17 +61,15 @@
       "title": "Brands that work with Mirae SMT",
       "subtitle": "A trusted manufacturing partner for global brands and Korean industry leaders",
       "items": [
-        { "name": "HYUNDAI ROTEM" },
-        { "name": "TXR ROBOTICS" },
-        { "name": "E-SEEK" },
-        { "name": "RAONARK" },
-        { "name": "LEETEK" },
-        { "name": "Seochang Electric & Telecom" },
-        { "name": "CSI N-Tech" },
-        { "name": "SYS TRONICS" },
-        { "name": "FASTECH" },
-        { "name": "SOTRON" },
-        { "name": "COSTIMO" }
+        { "id": "hyundai_rotem", "name": "HYUNDAI ROTEM" },
+        { "id": "txr_robotics", "name": "TXR ROBOTICS" },
+        { "id": "e_seek", "name": "E-SEEK" },
+        { "id": "raonark", "name": "RAONARK" },
+        { "id": "leetek", "name": "LEETEK" },
+        { "id": "seochang", "name": "Seochang Electric & Telecom" },
+        { "id": "csi_ntech", "name": "CSI N-Tech" },
+        { "id": "fastech", "name": "FASTECH" },
+        { "id": "costimo", "name": "COSTIMO" }
       ]
     },
     "video": {

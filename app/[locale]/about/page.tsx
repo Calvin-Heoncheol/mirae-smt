@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { Target, Eye, Sparkles, CheckCircle2 } from 'lucide-react';
 import PageHero from '@/components/sections/PageHero';
@@ -25,13 +26,22 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
             <div className="lg:col-span-5">
               <span className="eyebrow">{t('ceo.title')}</span>
-              <div className="mt-6 rounded-2xl overflow-hidden border border-ink-100 bg-gradient-to-br from-ink-100 via-white to-brand-50 aspect-[4/5] flex items-end p-6">
-                <div className="bg-white/70 backdrop-blur rounded-xl px-4 py-3 border border-white">
-                  <div className="text-lg font-bold text-ink-900">
-                    {t('ceo.name')}
-                  </div>
-                  <div className="text-sm text-ink-600 mt-0.5">
-                    {t('ceo.position')}
+              <div className="mt-6 relative rounded-2xl overflow-hidden border border-ink-100 aspect-[4/5]">
+                <Image
+                  src={siteConfig.company.ceoPhoto}
+                  alt={t('ceo.name')}
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 40vw"
+                  className="object-cover object-top"
+                />
+                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink-950/80 via-ink-950/30 to-transparent p-6">
+                  <div className="bg-white/80 backdrop-blur rounded-xl px-4 py-3 border border-white/80">
+                    <div className="text-lg font-bold text-ink-900">
+                      {t('ceo.name')}
+                    </div>
+                    <div className="text-sm text-ink-600 mt-0.5">
+                      {t('ceo.position')}
+                    </div>
                   </div>
                 </div>
               </div>
