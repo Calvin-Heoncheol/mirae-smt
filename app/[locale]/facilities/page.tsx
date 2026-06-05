@@ -1,8 +1,10 @@
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { ImageOff } from 'lucide-react';
+import type { Locale } from '@/i18n';
 import PageHero from '@/components/sections/PageHero';
 import SectionHeader from '@/components/sections/SectionHeader';
+import CTA from '@/components/sections/CTA';
 import { siteConfig } from '@/config/site';
 
 const equipmentImages: Record<string, string | undefined> = {
@@ -17,7 +19,11 @@ const equipmentImages: Record<string, string | undefined> = {
   'dry-ice': '/images/equipment/Dry_Ice_Cleaner.jpg',
 };
 
-export default function FacilitiesPage() {
+export default function FacilitiesPage({
+  params: { locale },
+}: {
+  params: { locale: Locale };
+}) {
   const t = useTranslations('facilities');
 
   const stats = t.raw('stats.items') as { label: string; value: string }[];
@@ -112,6 +118,7 @@ export default function FacilitiesPage() {
         </div>
       </section>
 
+      <CTA locale={locale} />
     </>
   );
 }

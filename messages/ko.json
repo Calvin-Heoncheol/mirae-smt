@@ -31,7 +31,7 @@
     },
     "strengths": {
       "title": "왜 미래SMT인가",
-      "subtitle": "20년의 노하우와 통합 공정 라인이 만드는 차이",
+      "subtitle": "1993년 창립 이래 쌓아 온 노하우와 통합 공정 라인이 만드는 차이",
       "items": [
         {
           "title": "원스톱 통합 공정",
@@ -104,7 +104,7 @@
   "about": {
     "hero": {
       "eyebrow": "About Mirae SMT",
-      "title": "기술과 신뢰로 30년,\n앞으로의 30년을 준비합니다",
+      "title": "1993년 창립,\n기술과 신뢰로 함께합니다",
       "subtitle": "1993년 창립 이래, 우리는 고객의 아이디어를 완성품으로 구현해 온 OEM/ODM 전문 제조 파트너입니다."
     },
     "ceo": {
@@ -139,7 +139,7 @@
         { "year": "2008", "text": "중국 심양 법인 설립 · 수영전자 SMT 3개 라인 구축" },
         { "year": "2014", "text": "대웅전자향 SMT 2개 라인 구축 (삼성 LCD)" },
         { "year": "2016", "text": "부천 102동 4층 전층(全層) 확장" },
-        { "year": "2023", "text": "SMT 라인 8개로 증설 · SMT 라인 교체 (JUKI → 한화)" },
+        { "year": "2023", "text": "SMT 라인 7개 운영 · 한화 장비로 교체 (JUKI → 한화)" },
         { "year": "2025", "text": "스마트 팩토리 구축 — MES 시스템 도입" }
       ]
     }
@@ -261,20 +261,38 @@
     },
     "form": {
       "title": "온라인 문의",
-      "subtitle": "필수 항목을 입력해 주세요",
+      "subtitle": "이름, 이메일, 문의 내용은 필수입니다. 나머지는 선택 사항입니다.",
       "name": "이름",
       "company": "회사명",
       "email": "이메일",
       "phone": "연락처",
-      "subject": "제목",
-      "message": "문의 내용",
-      "messagePlaceholder": "제품 종류, 예상 수량, 도면 보유 여부 등을 알려주세요.",
+      "productType": "제품 유형",
+      "productTypePlaceholder": "제품 유형을 선택해 주세요",
+      "productTypes": {
+        "smt": "SMT 실장",
+        "pcb": "PCB 조립",
+        "assembly": "완제품 조립",
+        "full": "전 공정 (SMT ~ 출하)",
+        "other": "기타"
+      },
+      "quantity": "예상 수량",
+      "quantityPlaceholder": "예: 1,000 pcs / 월",
+      "targetDelivery": "목표 납기",
+      "targetDeliveryPlaceholder": "예: 2025년 9월",
+      "attachment": "도면 첨부 (보유시)",
+      "attachmentHint": "PDF, DWG, ZIP, PNG, JPG (최대 10MB, 선택)",
+      "message": "추가 문의 내용",
+      "messagePlaceholder": "제품 사양, 부품 정보, 특이 요구사항 등을 자유롭게 적어 주세요.",
       "submit": "보내기",
       "submitting": "보내는 중...",
       "successTitle": "문의가 접수되었습니다",
       "successMessage": "확인 후 영업일 기준 2일 이내에 회신드리겠습니다.",
       "errorTitle": "전송에 실패했습니다",
-      "errorMessage": "잠시 후 다시 시도하거나, 이메일로 직접 문의해 주세요."
+      "errorMessage": "잠시 후 다시 시도하거나, 이메일로 직접 문의해 주세요.",
+      "fileTooLarge": "첨부 파일은 10MB 이하만 업로드할 수 있습니다.",
+      "fileTypeInvalid": "PDF, DWG, ZIP, PNG, JPG 파일만 첨부할 수 있습니다.",
+      "serviceNotConfigured": "이메일 서비스가 아직 설정되지 않았습니다. miraesmtamerica@gmail.com 으로 직접 문의해 주세요.",
+      "domainNotVerified": "이메일 발송 설정이 완료되지 않았습니다. miraesmtamerica@gmail.com 으로 직접 문의해 주세요."
     }
   },
   "footer": {

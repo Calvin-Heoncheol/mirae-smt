@@ -6,6 +6,7 @@ import ProcessPreview from '@/components/sections/ProcessPreview';
 import Industries from '@/components/sections/Industries';
 import VideoSection from '@/components/sections/VideoSection';
 import Clients from '@/components/sections/Clients';
+import CTA from '@/components/sections/CTA';
 
 export default function HomePage({
   params: { locale },
@@ -21,6 +22,7 @@ export default function HomePage({
       <Industries />
       <VideoSection />
       <Clients />
+      <CTA locale={locale} />
     </>
   );
 }

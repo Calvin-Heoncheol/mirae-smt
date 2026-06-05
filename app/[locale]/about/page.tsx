@@ -1,11 +1,17 @@
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { Target, Eye, Sparkles, CheckCircle2 } from 'lucide-react';
+import type { Locale } from '@/i18n';
 import PageHero from '@/components/sections/PageHero';
 import SectionHeader from '@/components/sections/SectionHeader';
+import CTA from '@/components/sections/CTA';
 import { siteConfig } from '@/config/site';
 
-export default function AboutPage() {
+export default function AboutPage({
+  params: { locale },
+}: {
+  params: { locale: Locale };
+}) {
   const t = useTranslations('about');
 
   const historyItems = t.raw('history.items') as { year: string; text: string }[];
@@ -25,8 +31,7 @@ export default function AboutPage() {
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
             <div className="lg:col-span-4">
-              <span className="eyebrow">{t('ceo.title')}</span>
-              <div className="mt-6 relative max-w-xs mx-auto lg:mx-0 rounded-2xl overflow-hidden border border-ink-100 aspect-[3/4]">
+              <div className="relative max-w-xs mx-auto lg:mx-0 rounded-2xl overflow-hidden border border-ink-100 aspect-[3/4]">
                 <Image
                   src={siteConfig.company.ceoPhoto}
                   alt={t('ceo.name')}
@@ -34,12 +39,12 @@ export default function AboutPage() {
                   sizes="(max-width: 1024px) 80vw, 320px"
                   className="object-cover object-top"
                 />
-                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink-950/80 via-ink-950/30 to-transparent p-6">
-                  <div className="bg-white/80 backdrop-blur rounded-xl px-4 py-3 border border-white/80">
-                    <div className="text-lg font-bold text-ink-900">
+                <div className="absolute bottom-3 right-3">
+                  <div className="bg-white/85 backdrop-blur rounded-lg px-2.5 py-1.5 border border-white/80 shadow-sm">
+                    <div className="text-xs font-bold text-ink-900">
                       {t('ceo.name')}
                     </div>
-                    <div className="text-sm text-ink-600 mt-0.5">
+                    <div className="text-[10px] text-ink-600 mt-0.5">
                       {t('ceo.position')}
                     </div>
                   </div>
@@ -152,6 +157,7 @@ export default function AboutPage() {
         </div>
       </section>
 
+      <CTA locale={locale} />
     </>
   );
 }

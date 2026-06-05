@@ -12,7 +12,11 @@ export type Inquiry = {
   email: string;
   phone?: string;
   subject: string;
+  productType?: string;
+  quantity?: string;
+  targetDelivery?: string;
   message: string;
+  attachmentName?: string;
   locale?: 'ko' | 'en';
   submittedAt: Date;
 };
@@ -52,6 +56,14 @@ export function adminNotificationEmail(inquiry: Inquiry) {
     email: escapeHtml(inquiry.email),
     phone: inquiry.phone ? escapeHtml(inquiry.phone) : '-',
     subject: escapeHtml(inquiry.subject),
+    productType: inquiry.productType ? escapeHtml(inquiry.productType) : '-',
+    quantity: inquiry.quantity ? escapeHtml(inquiry.quantity) : '-',
+    targetDelivery: inquiry.targetDelivery
+      ? escapeHtml(inquiry.targetDelivery)
+      : '-',
+    attachmentName: inquiry.attachmentName
+      ? escapeHtml(inquiry.attachmentName)
+      : '-',
     message: escapeHtml(inquiry.message).replace(/\n/g, '<br/>'),
   };
 
@@ -83,7 +95,10 @@ export function adminNotificationEmail(inquiry: Inquiry) {
                   ${row('회사', safe.company)}
                   ${row('이메일', `<a href="mailto:${safe.email}" style="color:${brand.primary};text-decoration:none;">${safe.email}</a>`)}
                   ${row('전화', safe.phone)}
-                  ${row('문의 유형', safe.subject)}
+                  ${row('제품 유형', safe.productType)}
+                  ${row('예상 수량', safe.quantity)}
+                  ${row('목표 납기', safe.targetDelivery)}
+                  ${row('도면 첨부', safe.attachmentName)}
                   ${row('접수 시각', formatDate(inquiry.submittedAt, 'ko'))}
                 </table>
 
@@ -122,7 +137,10 @@ export function adminNotificationEmail(inquiry: Inquiry) {
 회사: ${inquiry.company || '-'}
 이메일: ${inquiry.email}
 전화: ${inquiry.phone || '-'}
-문의 유형: ${inquiry.subject}
+제품 유형: ${inquiry.productType || '-'}
+예상 수량: ${inquiry.quantity || '-'}
+목표 납기: ${inquiry.targetDelivery || '-'}
+도면 첨부: ${inquiry.attachmentName || '-'}
 접수 시각: ${formatDate(inquiry.submittedAt, 'ko')}
 
 [문의 내용]
@@ -142,6 +160,11 @@ export function autoReplyEmail(inquiry: Inquiry) {
   const safe = {
     name: escapeHtml(inquiry.name),
     subject: escapeHtml(inquiry.subject),
+    productType: inquiry.productType ? escapeHtml(inquiry.productType) : '-',
+    quantity: inquiry.quantity ? escapeHtml(inquiry.quantity) : '-',
+    targetDelivery: inquiry.targetDelivery
+      ? escapeHtml(inquiry.targetDelivery)
+      : '-',
     message: escapeHtml(inquiry.message).replace(/\n/g, '<br/>'),
   };
 
@@ -162,6 +185,9 @@ export function autoReplyEmail(inquiry: Inquiry) {
        급한 사항은 아래 연락처로 직접 문의해 주세요.`;
 
   const inquirySectionTitle = isEn ? 'Your Inquiry' : '문의하신 내용';
+  const productTypeLabel = isEn ? 'Product Type' : '제품 유형';
+  const quantityLabel = isEn ? 'Estimated Quantity' : '예상 수량';
+  const targetDeliveryLabel = isEn ? 'Target Delivery' : '목표 납기';
   const contactSectionTitle = isEn ? 'Contact Information' : '연락처';
   const phoneLabel = isEn ? 'Phone' : '전화';
   const emailLabel = isEn ? 'Email' : '이메일';
@@ -204,7 +230,11 @@ export function autoReplyEmail(inquiry: Inquiry) {
                 <div style="margin-top:24px;">
                   <div style="font-size:13px;font-weight:600;color:${brand.muted};text-transform:uppercase;letter-spacing:0.5px;margin-bottom:8px;">${inquirySectionTitle}</div>
                   <div style="background:${brand.light};border:1px solid ${brand.border};border-radius:8px;padding:16px;">
-                    <div style="font-size:14px;font-weight:600;color:${brand.dark};margin-bottom:8px;">${safe.subject}</div>
+                    <table role="presentation" cellpadding="0" cellspacing="0" style="width:100%;margin-bottom:12px;">
+                      <tr><td style="padding:3px 0;font-size:13px;color:${brand.muted};width:110px;">${productTypeLabel}</td><td style="padding:3px 0;font-size:14px;color:${brand.dark};font-weight:500;">${safe.productType}</td></tr>
+                      <tr><td style="padding:3px 0;font-size:13px;color:${brand.muted};">${quantityLabel}</td><td style="padding:3px 0;font-size:14px;color:${brand.dark};font-weight:500;">${safe.quantity}</td></tr>
+                      <tr><td style="padding:3px 0;font-size:13px;color:${brand.muted};">${targetDeliveryLabel}</td><td style="padding:3px 0;font-size:14px;color:${brand.dark};font-weight:500;">${safe.targetDelivery}</td></tr>
+                    </table>
                     <div style="font-size:14px;line-height:1.6;color:${brand.muted};white-space:pre-wrap;">${safe.message}</div>
                   </div>
                 </div>
@@ -245,7 +275,9 @@ We have received your inquiry and will get back to you within 2 business days.
 For urgent matters, please contact us directly.
 
 [Your Inquiry]
-Subject: ${inquiry.subject}
+Product Type: ${inquiry.productType || '-'}
+Estimated Quantity: ${inquiry.quantity || '-'}
+Target Delivery: ${inquiry.targetDelivery || '-'}
 
 ${inquiry.message}
 
@@ -265,7 +297,9 @@ This is an automated response. Please do not reply directly to this email.`
 급한 사항은 아래 연락처로 직접 문의해 주세요.
 
 [문의하신 내용]
-제목: ${inquiry.subject}
+제품 유형: ${inquiry.productType || '-'}
+예상 수량: ${inquiry.quantity || '-'}
+목표 납기: ${inquiry.targetDelivery || '-'}
 
 ${inquiry.message}
 

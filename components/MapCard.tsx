@@ -5,28 +5,27 @@ import { siteConfig } from '@/config/site';
 export default function MapCard({ locale }: { locale: Locale }) {
   const address = siteConfig.contact.address[locale];
   const addressKo = siteConfig.contact.address.ko;
-  const naverUrl = `https://map.naver.com/v5/search/${encodeURIComponent(addressKo)}`;
+  const naverUrl = `https://map.naver.com/p/search/${encodeURIComponent(addressKo)}`;
+  const naverEmbedUrl = `https://map.naver.com/p/search/${encodeURIComponent(addressKo)}`;
   const googleUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(addressKo)}`;
 
   return (
     <div className="rounded-2xl border border-ink-100 bg-white overflow-hidden shadow-sm">
-      <div className="relative h-56 md:h-64 bg-gradient-to-br from-brand-700 via-brand-800 to-ink-950 overflow-hidden">
-        <div
-          aria-hidden
-          className="absolute inset-0 opacity-[0.08]"
-          style={{
-            backgroundImage:
-              'radial-gradient(circle at 1px 1px, white 1px, transparent 0)',
-            backgroundSize: '24px 24px',
-          }}
+      <div className="relative h-56 md:h-64 overflow-hidden bg-ink-100">
+        <iframe
+          title={locale === 'ko' ? '미래SMT 본사 네이버 지도' : 'Mirae SMT HQ Naver Map'}
+          src={naverEmbedUrl}
+          className="absolute inset-0 h-full w-full border-0"
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
         />
         <div
           aria-hidden
-          className="absolute -top-16 -right-16 h-56 w-56 rounded-full bg-brand-400/20 blur-3xl"
+          className="absolute inset-0 bg-gradient-to-t from-ink-950/65 via-ink-950/10 to-transparent"
         />
         <div className="relative h-full flex flex-col justify-end p-6">
           <div className="flex items-start gap-3">
-            <span className="flex-shrink-0 inline-flex h-11 w-11 items-center justify-center rounded-xl bg-white/10 backdrop-blur ring-1 ring-white/15">
+            <span className="flex-shrink-0 inline-flex h-11 w-11 items-center justify-center rounded-xl bg-white/20 backdrop-blur ring-1 ring-white/30">
               <MapPin className="h-5 w-5 text-brand-300" />
             </span>
             <div>

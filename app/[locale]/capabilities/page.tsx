@@ -9,8 +9,10 @@ import {
   ArrowRight,
   type LucideIcon,
 } from 'lucide-react';
+import type { Locale } from '@/i18n';
 import PageHero from '@/components/sections/PageHero';
 import SectionHeader from '@/components/sections/SectionHeader';
+import CTA from '@/components/sections/CTA';
 import { siteConfig } from '@/config/site';
 
 const processKeys = ['smt', 'pcb', 'assembly', 'qc', 'packaging'] as const;
@@ -24,7 +26,11 @@ const icons: Record<ProcessKey, LucideIcon> = {
   packaging: PackageCheck,
 };
 
-export default function CapabilitiesPage() {
+export default function CapabilitiesPage({
+  params: { locale },
+}: {
+  params: { locale: Locale };
+}) {
   const t = useTranslations('capabilities');
 
   return (
@@ -128,6 +134,7 @@ export default function CapabilitiesPage() {
         </div>
       </section>
 
+      <CTA locale={locale} />
     </>
   );
 }

@@ -31,7 +31,7 @@
     },
     "strengths": {
       "title": "Why Mirae SMT",
-      "subtitle": "Two decades of expertise meets a fully integrated production line",
+      "subtitle": "Expertise built since 1993, powered by a fully integrated production line",
       "items": [
         {
           "title": "One-Stop Integration",
@@ -104,7 +104,7 @@
   "about": {
     "hero": {
       "eyebrow": "About Mirae SMT",
-      "title": "30 years of technology and trust,\nbuilding the next 30",
+      "title": "Founded in 1993,\nbuilding on technology and trust",
       "subtitle": "Since 1993, we have been a dedicated OEM/ODM manufacturing partner turning ideas into finished products."
     },
     "ceo": {
@@ -139,7 +139,7 @@
         { "year": "2008", "text": "Established Shenyang (China) subsidiary · 3 SMT lines for Suyoung Electronics" },
         { "year": "2014", "text": "Built 2 SMT lines for Daewoong Electronics (Samsung LCD)" },
         { "year": "2016", "text": "Expanded full 4F of Bucheon Bldg. #102" },
-        { "year": "2023", "text": "Expanded SMT lines to 8 · SMT line upgrade (JUKI → Hanwha)" },
+        { "year": "2023", "text": "Operating 7 SMT lines · Equipment upgrade (JUKI → Hanwha)" },
         { "year": "2025", "text": "Smart factory transformation — MES system deployed" }
       ]
     }
@@ -261,20 +261,38 @@
     },
     "form": {
       "title": "Online Inquiry",
-      "subtitle": "Please fill in the required fields",
+      "subtitle": "Name, email, and message are required. All other fields are optional.",
       "name": "Name",
       "company": "Company",
       "email": "Email",
       "phone": "Phone",
-      "subject": "Subject",
-      "message": "Message",
-      "messagePlaceholder": "Product type, expected volume, drawing availability, etc.",
+      "productType": "Product Type",
+      "productTypePlaceholder": "Select a product type",
+      "productTypes": {
+        "smt": "SMT Placement",
+        "pcb": "PCB Assembly",
+        "assembly": "Final Product Assembly",
+        "full": "Full Process (SMT to Shipment)",
+        "other": "Other"
+      },
+      "quantity": "Estimated Quantity",
+      "quantityPlaceholder": "e.g. 1,000 pcs / month",
+      "targetDelivery": "Target Delivery",
+      "targetDeliveryPlaceholder": "e.g. September 2025",
+      "attachment": "Attach Drawing (if available)",
+      "attachmentHint": "PDF, DWG, ZIP, PNG, JPG (max 10MB, optional)",
+      "message": "Additional Details",
+      "messagePlaceholder": "Product specs, component details, special requirements, etc.",
       "submit": "Send",
       "submitting": "Sending...",
       "successTitle": "Inquiry received",
       "successMessage": "We'll get back to you within 2 business days.",
       "errorTitle": "Failed to send",
-      "errorMessage": "Please try again later or email us directly."
+      "errorMessage": "Please try again later or email us directly.",
+      "fileTooLarge": "Attachments must be 10MB or smaller.",
+      "fileTypeInvalid": "Only PDF, DWG, ZIP, PNG, and JPG files are allowed.",
+      "serviceNotConfigured": "The email service is not configured yet. Please contact us directly at miraesmtamerica@gmail.com.",
+      "domainNotVerified": "Email delivery is not fully set up yet. Please contact us directly at miraesmtamerica@gmail.com."
     }
   },
   "footer": {

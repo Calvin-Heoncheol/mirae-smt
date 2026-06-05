@@ -1,10 +1,16 @@
 import { useTranslations } from 'next-intl';
 import { Award, ShieldCheck } from 'lucide-react';
+import type { Locale } from '@/i18n';
 import QualityHero from '@/components/sections/QualityHero';
 import SectionHeader from '@/components/sections/SectionHeader';
+import CTA from '@/components/sections/CTA';
 import { siteConfig } from '@/config/site';
 
-export default function QualityPage() {
+export default function QualityPage({
+  params: { locale },
+}: {
+  params: { locale: Locale };
+}) {
   const t = useTranslations('quality');
 
   const steps = t.raw('process.steps') as {
@@ -87,6 +93,8 @@ export default function QualityPage() {
           </div>
         </div>
       </section>
+
+      <CTA locale={locale} />
     </>
   );
 }
