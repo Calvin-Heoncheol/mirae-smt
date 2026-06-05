@@ -24,14 +24,14 @@ export default function AboutPage() {
       <section className="section">
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
-            <div className="lg:col-span-5">
+            <div className="lg:col-span-4">
               <span className="eyebrow">{t('ceo.title')}</span>
-              <div className="mt-6 relative rounded-2xl overflow-hidden border border-ink-100 aspect-[4/5]">
+              <div className="mt-6 relative max-w-xs mx-auto lg:mx-0 rounded-2xl overflow-hidden border border-ink-100 aspect-[3/4]">
                 <Image
                   src={siteConfig.company.ceoPhoto}
                   alt={t('ceo.name')}
                   fill
-                  sizes="(max-width: 1024px) 100vw, 40vw"
+                  sizes="(max-width: 1024px) 80vw, 320px"
                   className="object-cover object-top"
                 />
                 <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink-950/80 via-ink-950/30 to-transparent p-6">
@@ -46,7 +46,7 @@ export default function AboutPage() {
                 </div>
               </div>
             </div>
-            <div className="lg:col-span-7">
+            <div className="lg:col-span-8">
               <h2 className="text-2xl md:text-3xl font-bold text-ink-900 tracking-tight">
                 {t('ceo.title')}
               </h2>
