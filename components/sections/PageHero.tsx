@@ -5,11 +5,13 @@ export default function PageHero({
   title,
   subtitle,
   backgroundImage,
+  compact = false,
 }: {
   eyebrow?: string;
   title: string;
   subtitle?: string;
   backgroundImage?: string;
+  compact?: boolean;
 }) {
   return (
     <section className="relative overflow-hidden bg-ink-950 text-white">
@@ -50,18 +52,36 @@ export default function PageHero({
         </>
       )}
 
-      <div className="container relative z-10 py-16 md:py-24">
+      <div
+        className={
+          compact
+            ? 'container relative z-10 py-10 md:py-14'
+            : 'container relative z-10 py-16 md:py-24'
+        }
+      >
         <div className="max-w-3xl">
           {eyebrow && (
             <span className="inline-block text-xs md:text-sm font-semibold uppercase tracking-[0.2em] text-brand-300">
               {eyebrow}
             </span>
           )}
-          <h1 className="mt-3 text-3xl md:text-5xl font-bold tracking-tight whitespace-pre-line text-balance leading-[1.15] drop-shadow-sm">
+          <h1
+            className={
+              compact
+                ? 'mt-2 text-2xl md:text-4xl font-bold tracking-tight whitespace-pre-line text-balance leading-[1.15] drop-shadow-sm'
+                : 'mt-3 text-3xl md:text-5xl font-bold tracking-tight whitespace-pre-line text-balance leading-[1.15] drop-shadow-sm'
+            }
+          >
             {title}
           </h1>
           {subtitle && (
-            <p className="mt-5 text-base md:text-lg text-ink-200 leading-relaxed max-w-2xl drop-shadow-sm">
+            <p
+              className={
+                compact
+                  ? 'mt-3 text-sm md:text-base text-ink-200 leading-relaxed max-w-2xl drop-shadow-sm'
+                  : 'mt-5 text-base md:text-lg text-ink-200 leading-relaxed max-w-2xl drop-shadow-sm'
+              }
+            >
               {subtitle}
             </p>
           )}

@@ -44,6 +44,7 @@ export default function ContactPage({
         eyebrow={t('hero.eyebrow')}
         title={t('hero.title')}
         subtitle={t('hero.subtitle')}
+        compact
       />
 
       <section className="section">

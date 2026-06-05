@@ -30,6 +30,11 @@ export const siteConfig = {
       ko: '경기도 부천시 오정구 삼정동 364 부천테크노파크 102동 405호',
       en: '#405, Bldg. 102, Bucheon Technopark, 364 Samjeong-dong, Ojeong-gu, Bucheon-si, Gyeonggi-do, South Korea',
     },
+    // 네이버 지도 API용 좌표 (부천테크노파크 102동)
+    coordinates: {
+      lat: 37.501386,
+      lng: 126.786667,
+    },
     businessHours: {
       ko: '평일 09:00 ~ 18:00 (주말/공휴일 휴무)',
       en: 'Mon-Fri 09:00 ~ 18:00 (Closed on weekends & holidays)',
