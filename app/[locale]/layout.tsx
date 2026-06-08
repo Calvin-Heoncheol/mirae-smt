@@ -5,6 +5,7 @@ import { NextIntlClientProvider } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
 import { locales, type Locale } from '@/i18n';
 import { siteConfig } from '@/config/site';
+import GoogleAnalytics from '@/components/GoogleAnalytics';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 
@@ -75,6 +76,7 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} className={inter.variable}>
       <body className="min-h-screen flex flex-col font-sans">
+        <GoogleAnalytics />
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Header locale={locale as Locale} />
           <main className="flex-1">{children}</main>

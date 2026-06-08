@@ -17,7 +17,12 @@ export const siteConfig = {
     ko: 'SMT부터 PCB 조립, 완제품 조립, 검사, 포장까지 — 전 공정을 책임지는 통합 제조 솔루션.',
     en: 'From SMT and PCB assembly to final product assembly, inspection, and packaging — your end-to-end manufacturing solution.',
   },
-  url: 'https://example.com',
+  url: 'https://miraesmt.com',
+
+  // Google Analytics / Ads (gtag.js)
+  analytics: {
+    googleTagId: 'G-SGTE6XX4LV',
+  },
 
   contact: {
     email: 'miraesmtamerica@gmail.com',
